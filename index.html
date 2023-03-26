@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+           <img src="data:image/png;base64,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" alt="walk" id="icon" />
+        </div>
+        <div class="logo_content">
+            <div class="logo_content1">
+                <h1 style="font-size: xx-large;color: brown;">OBESITY</h1>
+            </div>
+
+<div class="logo_content2">
+            <p style="font-size: larger; color: aliceblue;">CHILDHOOD STATISTICS</p>
+</div>           
+
+        </div>
+        
+    </div>
+
+<div id="box">
+ <div class="box">
+    <div id="box_content"></div>
+    <i class="fa-solid fa-person" id="icon"></i>
+    <i class="fa-solid fa-person" id="icon"></i>
+    <i class="fa-solid fa-person" id="icon"></i>
+
+        <h2 style="font-size: xx-large;">1 IN 3</h2>
+        <p >children and </br>adolescents(ages2-19) 
+        <h2>ARE OVERWEIGHT</h2><h2>OR OBESE</h2>and almost NONE meet </br>recommended healthy,diet and </br>physical activity amount</p>
+    </div>
+        <div class="box1">
+            <p>An estimated</p>
+            <h2 style="font-size: xx-large;">12.5</h2>
+            <h2 style="font-size: xx-large;">MILLION</h2>
+            <p>Children(ages 5 years or</br>younger),spend
+            <h2>33 HOURS / WEEK</h2>in child care and</br>consume nearly all of their</br>daily calories</p>
+        </div>
+</div>
+
+<div id="box2">
+
+    <div class="box1">
+        <div id="box2_content">
+            <div id="box2_content1">
+                <h2>OBESITY IS LINKED</br>TO MUCH CHRONIC</br>CONDITIONS THAN:</h2>
+
+            </div>
+            <div id="box2_content2">
+                <i class="fa-solid fa-smoking" id="icon"></i>
+                <i class="fa-solid fa-hand-holding-dollar" id="icon"></i>
+                <i class="fa-solid fa-martini-glass-citrus" id="icon"></i>
+            </div>
+
+        </div>
+        <p >Increasing the risk of more than 20 PREVENTION DISEASES,including sleep
+</br>apnea,asthma type 2 diabetes,osteoarthritics,high blood </br>presure and high-cholestrerol stroke
+        </p>
+    </div>
+        
+</div>
+<div id="box3">
+
+    <div id="box3_content1">
+
+        <h2>RISK FACTOR</h2>
+    </div>
+   
+    <div id="box3_content">
+        <div  id="box3_content2">
+            <p style="font-size: smaller;">Children in their early teens who are</br>obese and who have HIGH TRIGLYCERIDE</br>LEVELS have arteries similar to those</br>of 45-years olds.
+            </p>
+<p style="font-size: smaller;">Obese children as young as age 3</br>show indicators for DEVELOPING HEART</br>DISEASES later in life</p>
+
+        </div>
+        <div id="box3_content3">
+<p style="font-size: smaller;">Children who are overweight from </br> the age of 7to13 may develop</br>HEART DISEASES as early as age 25</p>
+<p style="font-size: smaller;">Obese children are twice as likely </br>to die before age 55 then their</br>slimmer peers</p>
+
+        </div>
+
+    </div>
+     
+
+     
+</div>
+
+<div id="box4">
+    <div class="box1">
+        
+        
+           <h2 >FRENCH FRIES</h2>
+           <p >are the most common vegtables </br>that children eat,comprising </p>
+           <h2>25%</h2>
+           <p>of their vegtable intake</p>
+           <div id="box4_content1">
+           <img src="https://th.bing.com/th/id/R.44b5629681a8ea2b8528461a19d1a199?rik=ADXF%2bf%2bU%2fKI2iw&riu=http%3a%2f%2ficons.iconarchive.com%2ficons%2fgoogle%2fnoto-emoji-food-drink%2f1024%2f32383-french-fries-icon.png&ehk=NQzLvl3V9drGrFK%2fXxSxbMr6Md9LrfZwPw0RE2KntiU%3d&risl=&pid=ImgRaw&r=0" alt="fries" id="icon" />
+          </div>
+
+       </div>
+           <div class="box2">
+            <div id="box4_content2">
+                <img src='./cocktail.png' id="icon" />
+              </div>
+               <h2>JUICE</h2>
+               <p>(which may lack important fibre)
+               </br>found in which frui</p>
+            <h2>40%</h2>
+            <p>of children daily friut intake</p>
+           </div>
+   </div>
+
+   <div id="box5">
+
+    <div class="box1">
+        <div id="box5_content">
+            <div id="box5_content1">
+                <h2>40% - 50% OF</br>TODDLERS</h2>
+
+            </div>
+            <div id="box5_content2">
+                <i class="fa-solid fa-tv" id="icon"></i>
+                
+            </div>
+
+        </div>
+        <p >Watch MORE television than is recommended </p>
+    </div>
+        
+</div>
+   
+<div id="box6">
+
+    <div class="box1">
+        <div id="box6_content">
+            <div id="box6_content1">
+ <h2 style="font-size: xx-large;">NEARLY 1/2 OF</h2>
+    <h2 style="font-size: xx-large;">PRESCHOOLERS</h2>
+            </div>
+            <div id="box6_content2">
+                <i class="fa-solid fa-bicycle" id="icon"></i>
+                
+            </div>
+        </div>
+    <p>dont get enough physical activity</p>
+    </div>
+        
+</div>
+
+<div id="box7">
+    <div class="box1">
+
+          <div id="box7_content1">
+            <i class="fa-solid fa-sack-dollar" id="icon"></i>
+          </div>
+           <p>The cost of obesity in 
+           </br>
+           united states is staggering
+        </br>
+        totaling about</p>
+           <h2 style="font-size: xx-large;">$147</h2>
+           <h2 style="font-size: xx-large;">BILLION</h2>
+           
+       </div>
+           <div class="box2">
+               
+               <h2>CHILDREN WHO</h2>
+               <h2>EAT HEAL THY</h2>
+               <h2>FOODS AND GET</h2>
+               <h2>DAILY PHYSICAL</h2>
+               <h2>ACTIVITY HAVE:</h2>
+               <p>Fever school absences
+               </br> Higher academic achievement</br> Higher self-esteem</br> Fever behavioral probelms </p>
+
+           </div>
+   </div>
+
+
+
+</body>
+
+
+</html>
